@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Tag(
         name = "CRUD REST APIs for Accounts in EazyBank",
-        description = "CRUD REST APIs in EazyBank to CREATE. UPDATE. FETC and DELETE account details"
+        description = "CRUD REST APIs in EazyBank to CREATE. UPDATE. FETCH and DELETE account details"
 )
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -68,7 +68,7 @@ public class AccountsController {
 
     @Operation(
             summary = "Fetch Account Details REST API",
-            description = "REST API to fetch Customer & Account details basen on a mobile number"
+            description = "REST API to fetch Customer & Account details based on a mobile number"
     )
     @ApiResponses({
             @ApiResponse(
@@ -95,7 +95,7 @@ public class AccountsController {
 
     @Operation(
             summary = "Update Account Details REST API",
-            description = "REST API to update Customer & Account details basen on account number"
+            description = "REST API to update Customer & Account details based on account number"
     )
     @ApiResponses({
             @ApiResponse(
@@ -121,7 +121,7 @@ public class AccountsController {
         if(isUpdated) {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(new ResponseDto(AccountsConstants.STATUS_200, AccountsConstants.MESSAGE_201));
+                    .body(new ResponseDto(AccountsConstants.STATUS_200, AccountsConstants.MESSAGE_200));
         }else {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)

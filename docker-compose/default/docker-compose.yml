@@ -1,5 +1,4 @@
 services:
-
   rabbit:
     image: rabbitmq:3.12-management
     hostname: rabbitmq
@@ -14,10 +13,10 @@ services:
       start_period: 5s
     extends:
       file: common-config.yml
-      service: nework-deploy-service
+      service: network-deploy-service
 
   configserver:
-    image: "taahaagul/configserver:s6"
+    image: "eazybytes/configserver:s6"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -35,37 +34,37 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "taahaagul/accounts:s6"
+    image: "eazybytes/accounts:s6"
     container_name: accounts-ms
     ports:
       - "8080:8080"
     environment:
-      SPRING_APPLICATION_NAME: accounts
+      SPRING_APPLICATION_NAME: "accounts"
     extends:
       file: common-config.yml
       service: microservice-configserver-config
 
   loans:
-    image: "taahaagul/loans:s6"
+    image: "eazybytes/loans:s6"
     container_name: loans-ms
     ports:
       - "8090:8090"
     environment:
-      SPRING_APPLICATION_NAME: loans
+      SPRING_APPLICATION_NAME: "loans"
     extends:
       file: common-config.yml
       service: microservice-configserver-config
 
   cards:
-    image: "taahaagul/cards:s6"
+    image: "eazybytes/cards:s6"
     container_name: cards-ms
     ports:
       - "9000:9000"
     environment:
-      SPRING_APPLICATION_NAME: cards
+      SPRING_APPLICATION_NAME: "cards"
     extends:
-        file: common-config.yml
-        service: microservice-configserver-config
+      file: common-config.yml
+      service: microservice-configserver-config
 
 networks:
   eazybank:

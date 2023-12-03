@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "eazybytes/configserver:s7"
+    image: "taahaagul/configserver:s7"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -45,7 +45,7 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "eazybytes/accounts:s7"
+    image: "taahaagul/accounts:s7"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -60,7 +60,7 @@ services:
       service: microservice-configserver-config
 
   loans:
-    image: "eazybytes/loans:s7"
+    image: "taahaagul/loans:s7"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -75,7 +75,7 @@ services:
       service: microservice-configserver-config
 
   cards:
-    image: "eazybytes/cards:s7"
+    image: "taahaagul/cards:s7"
     container_name: cards-ms
     ports:
       - "9000:9000"

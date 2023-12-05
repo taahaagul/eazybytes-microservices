@@ -41,7 +41,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -99,7 +99,7 @@
 				<version>3.4.0</version>
 				<configuration>
 					<to>
-						<image>taahaagul/${project.artifactId}:s6</image>
+						<image>taahaagul/${project.artifactId}:s7</image>
 					</to>
 				</configuration>
 			</plugin>

@@ -38,7 +38,7 @@ public class AccountsController {
 
     private final IAccountsService iAccountsService;
 
-    public AccountsController(IAccountsService iAccountsService) {
+    public AccountsController(IAccountsService iAccountsService)  {
         this.iAccountsService = iAccountsService;
     }
 
@@ -166,7 +166,7 @@ public class AccountsController {
             )
     })
     @DeleteMapping("/delete")
-    public ResponseEntity<ResponseDto> deleteAccountDetauls(
+    public ResponseEntity<ResponseDto> deleteAccountDetails(
             @RequestParam
             @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
             String mobileNumber

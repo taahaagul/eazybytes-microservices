@@ -1,6 +1,7 @@
 package com.taahaagul.accounts.mapper;
 
 import com.taahaagul.accounts.Entity.Customer;
+import com.taahaagul.accounts.dto.CustomerDetailsDto;
 import com.taahaagul.accounts.dto.CustomerDto;
 
 public class CustomerMapper {
@@ -10,6 +11,13 @@ public class CustomerMapper {
         customerDto.setEmail(customer.getEmail());
         customerDto.setMobileNumber(customer.getMobileNumber());
         return customerDto;
+    }
+
+    public static CustomerDetailsDto mapToCustomerDetailsDto(Customer customer, CustomerDetailsDto customerDetailsDto) {
+        customerDetailsDto.setName(customer.getName());
+        customerDetailsDto.setEmail(customer.getEmail());
+        customerDetailsDto.setMobileNumber(customer.getMobileNumber());
+        return customerDetailsDto;
     }
 
     public static Customer mapToCustomer(CustomerDto customerDto, Customer customer) {

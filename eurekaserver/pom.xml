@@ -56,16 +56,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.4.0</version>
 				<configuration>
 					<to>
-						<image>taahaagul/${project.artifactId}:s8</image>
+						<image>taahaagul/${project.artifactId}:s8.1</image>
 					</to>
 				</configuration>
 			</plugin>

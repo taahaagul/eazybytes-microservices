@@ -1,12 +1,11 @@
-
 spring:
   application:
     name: "eurekaserver"
   config:
-    import: "optional:configserver:http://localhost:8071"
+    import: "optional:configserver:http://localhost:8071/"
 
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: "*"
@@ -15,7 +14,7 @@ management:
       enabled: true
     liveness-state:
       enabled: true
-  endpoints:
+  endpoint:
     health:
       probes:
         enabled: true

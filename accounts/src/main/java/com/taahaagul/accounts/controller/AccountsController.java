@@ -212,10 +212,9 @@ public class AccountsController {
     @GetMapping("/build-info")
     public ResponseEntity<String> getBuildInfo() throws TimeoutException {
         logger.debug("Inside getBuildInfo method");
-        throw new TimeoutException();
-//        return ResponseEntity
-//                .status(HttpStatus.OK)
-//                .body(buildVersion);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(buildVersion);
     }
 
     public ResponseEntity<String> getBuildInfoFallback(Throwable throwable) {

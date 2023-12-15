@@ -102,7 +102,7 @@
 				<version>3.4.0</version>
 				<configuration>
 					<to>
-						<image>taahaagul/${project.artifactId}:s11</image>
+						<image>taahaagul/${project.artifactId}:s11.1</image>
 					</to>
 				</configuration>
 			</plugin>

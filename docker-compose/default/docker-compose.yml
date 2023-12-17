@@ -200,7 +200,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "taahaagul/configserver:s11.1"
+    image: "taahaagul/configserver:s11.2"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -217,7 +217,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "taahaagul/eurekaserver:s11.1"
+    image: "taahaagul/eurekaserver:s11.2"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -235,7 +235,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   accounts:
-    image: "taahaagul/accounts:s11.1"
+    image: "taahaagul/accounts:s11.2"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -253,7 +253,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "taahaagul/loans:s11.1"
+    image: "taahaagul/loans:s11.2"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -271,7 +271,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "taahaagul/cards:s11.1"
+    image: "taahaagul/cards:s11.2"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -289,7 +289,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "taahaagul/gatewayserver:s11.1"
+    image: "taahaagul/gatewayserver:s11.2"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"

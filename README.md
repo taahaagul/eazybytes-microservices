@@ -1,4 +1,4 @@
-# smartict-blog-app
+# eayzbank-microservices
 
 This project is a microservices implementation created by applying the latest Spring Cloud technologies end-to-end.
 

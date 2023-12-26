@@ -25,3 +25,7 @@ This project is a microservices implementation created by applying the latest Sp
 - Client Credentials Grant Type Flow
 - Authorization Code Grant Type Flow
 - Keycloak
+- Event Driven Microservices
+- Spring Cloud Function
+- Spring Cloud Stream
+- RabbitMQ

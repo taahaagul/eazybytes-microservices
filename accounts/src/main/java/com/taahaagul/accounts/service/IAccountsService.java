@@ -30,4 +30,11 @@ public interface IAccountsService {
      * @return boolean indicating if the delete of Account detail is successful or not
      */
     boolean deleteAccount(String mobileNumber);
+
+    /**
+     *
+     * @param accountNumber - Input Account Number
+     * @return boolean indicating if the update of Communication Status is successful or not
+     */
+    boolean updateCommunicationStatus(Long accountNumber);
 }

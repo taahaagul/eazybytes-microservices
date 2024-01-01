@@ -29,3 +29,4 @@ This project is a microservices implementation created by applying the latest Sp
 - Spring Cloud Function
 - Spring Cloud Stream
 - RabbitMQ
+- Kafka
